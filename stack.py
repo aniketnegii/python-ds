@@ -42,10 +42,22 @@ class Stack:
 
 s1 = Stack(10)
 s1.Pop()
+
 for i in range(10):
     s1.Push(i)
+
+print("Current values in stack:", end=" ")
 s1.display()
-a = s1.Pop()
+
+print("Value at top of stack:", s1.peek())
+
+print("Deleted values: ", end=" ")
+for i in range(4):
+    x = s1.Pop()
+    print(x, end=" ")
+print()
+
+print("Current values in stack(after deletion):", end=" ")
 s1.display()
-print(a)
-print(s1.peek())
+
+print("Value at top of stack:", s1.peek())
